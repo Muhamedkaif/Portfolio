@@ -20,7 +20,7 @@ A responsive and modern developer portfolio website to showcase my skills, proje
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/MuhamedKaif/CODSOFT.git
 
 # 2. Navigate into the project folder
 cd your-portfolio
