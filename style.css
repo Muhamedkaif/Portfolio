@@ -1,0 +1,272 @@
+/* This CSS code snippet is styling a webpage layout. Here is a breakdown of what each part of the code
+is doing: */
+body {
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: "LibertinusMono";
+  src: url("./fonts/Libertinus_Mono/LibertinusMono-Regular.ttf")
+    format("truetype");
+}
+body {
+  font-family: "LibertinusMono";
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0.9;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+.navbar button {
+  all: unset;
+  color: #eaeaea;
+}
+.designation {
+  font-size: 25px;
+}
+.index img {
+  position: absolute;
+  left: 75%;
+  top: 50px;
+}
+.index {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 100px;
+  height: 350px;
+  width: 99.4%;
+  font-family: "LibertinusMono";
+  color: #eaeaea;
+}
+.index h2 {
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-family: monospace;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+}
+.index h3 {
+  font-size: 25px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.index p {
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+.navbar {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar h1 {
+  color: #eaeaea;
+}
+.nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+}
+.nav li {
+  color: #eaeaea;
+  text-decoration: none;
+  list-style: none;
+}
+.AboutSection {
+  display: flex;
+}
+.AboutSection img {
+  position: relative;
+  top: 300px;
+}
+h3 {
+  margin-left: 300px;
+  display: inline-block;
+  border-bottom: 2px solid blue;
+}
+.About {
+  border-radius: 10px;
+  position: absolute;
+  top: 350px;
+  right: 70px;
+  z-index: 2;
+  margin-top: 150px;
+  margin-right: 100px;
+  height: 340px;
+  width: 800px;
+  animation: moveY 20s 0s ease-in-out infinite;
+}
+h4 {
+  font-size: 25px;
+}
+.skillset {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  z-index: 2;
+  width: 800px;
+  animation: moveX 20s 0s ease-in-out infinite;
+}
+.html {
+  font-size: 30px;
+  color: orangered;
+}
+.css {
+  font-size: 30px;
+  color: blue;
+}
+.js {
+  font-size: 30px;
+  color: goldenrod;
+}
+.images {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 900px;
+  left: 1000px;
+  animation: jumpInOut 3s ease-in-out infinite;
+}
+.images img {
+  height: 100px;
+  width: 100px;
+}
+.project1 {
+  position: absolute;
+  top: 1600px;
+  right: 20px;
+  height: 350px;
+  width: 1000px;
+}
+.project2 {
+  position: absolute;
+  top: 2050px;
+  width: 1000px;
+  height: 300px;
+  right: 300px;
+}
+.img1 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 1650px;
+}
+.img2 {
+  height: 270px;
+  width: 270px;
+  position: absolute;
+  top: 2050px;
+  left: 1050px;
+}
+.projects h4 {
+  display: block;
+}
+.experiences {
+  position: absolute;
+  top: 2400px;
+  left: 50px;
+}
+
+.contact {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  color: #f5f5f5;
+  text-align: center;
+  position: absolute;
+  top: 2700px;
+  left: 0px;
+}
+button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+button {
+  margin-left: 250px;
+  margin-bottom: 10px;
+  height: 45px;
+  width: 200px;
+  border-radius: 40px;
+  background-color: lightblue;
+}
+.contact a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+}
+.video1 {
+  position: absolute;
+  top: 1900px;
+}
+.video1 h2 {
+  margin-top: 70px;
+}
+
+@keyframes jumpInOut {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveX {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15ch;
+  } /* Adjust to number of characters */
+}
+
+@keyframes blink {
+  50% {
+    border-color: white;
+  }
+}

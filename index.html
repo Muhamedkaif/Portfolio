@@ -1,0 +1,181 @@
+<!-- The below code is an HTML document that represents an online portfolio webpage. It includes sections
+for navigation, introduction, about me, skills, projects, experiences, and contact information. The
+webpage also contains images, project details, and links to GitHub repositories. Additionally, there
+is JavaScript code that adds smooth scrolling functionality to the navigation buttons, allowing
+users to navigate to different sections of the webpage by clicking on the corresponding buttons in
+the navigation bar. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+      <div class="navbar">
+        <h1>Portfolio</h1>
+        <div class="nav">
+            <button id="home">Home</button>
+            <button id="about">About</button>
+            <button id="skill">skills</button>
+            <button id="projects">Projects</button>
+            <button id="experience">Experience</button>
+            <button id="contact">Contact me</button>
+        </div>  
+    </div>
+
+    +
+    <div class="index">
+        <img src="./assets/transparent photo.png">
+        <h2>Muhamed kaif k</h2>
+        <p>Hi, I’m a passionate learner with a growing interest in web development, especially in<br>  <span class="designation">full-stack </span>technologies. I'm currently diving into React, JavaScript, and <br>backend  frameworks like Node.js. I enjoy building real-world projects like e-commerce platforms and<br> event management apps.</p>
+
+    </div>
+
+
+    <div class="AboutSection">
+        <img src="./assets/my photo.png">
+        <div class="About">
+            <h3>About Me</h3>
+            <p>Hi, I’m  a curious student with a strong passion for technology and development. I’m currently focused on becoming a <span class="designation">full-stack web developer</span>, and I enjoy learning by building real-world projects. I'm exploring HTML, CSS, JavaScript, React, and backend technologies like Node.js and SQL to bring dynamic, user-friendly applications to life.<br><br>My goal is not just to learn how to code, but to solve real problems, understand cloud computing, and prepare myself for a career in tech and leadership roles. I value practical experience, which is why I seek internships and training programs that help me apply what I learn.</p>
+            <a href="./assets/resume.pdf" download>
+              <button> RESUME</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="skillset">
+        <h3>Skills</h3>
+
+      <p><h4>On the frontend</h4> 
+        I’m comfortable working with
+        <span class="html">HTML</span>,
+        <span class="css">CSS</span>, and 
+        <span class="js">JavaScript</span>
+        for building clean and responsive user interfaces.
+        I’ve recently started learning React, and I’m exploring how to create dynamic components, manage routes, and build single-page applications.
+
+      <h4>On the backend</h4>
+
+        I’m learning to use 
+        <span class="node">Node.js</span>
+        and Express to handle server-side logic.
+        I can connect applications to databases like 
+        <span style="color:blue; font-size: 30px;">My</span><span style="color: orangered; font-size: 30px;">SQL</span> and have plans to explore Firebase for real-time data handling.
+
+      <h4>In addition</h4>
+
+       I have basic knowledge of <span style="color: violet; font-size: 30px;">Python</span>, especially for data analysis using libraries like NumPy, Pandas, and Matplotlib
+       I’m familiar with how RESTful APIs work and how to use them in projects.
+       I’ve started understanding Git, version control, and tools like VS Code for development.
+       Overall, I’m still learning every day, and I’m excited to continue building up my skills through hands-on projects and new challenges.</p>
+    </div>
+
+
+    <div class="images">
+        <img src="./assets/html5-logo-31813.png">
+        <img src="./assets/html5-logo-31821.png">
+        <img src="./assets/javascript-39397.png">
+        <img src="./assets/icons8-github-64.png">
+        <img src="assets/icons8-visual-studio-code-48.png">
+        <img src="./assets/logo-mysql-26300.png">
+    </div>
+
+    <img class="img1" src="./assets/amazon clone ss.png"/>
+
+    <div class="project1">
+        <h3>Projects Done</h3>
+        <h4>amazon clone</h4>
+        <p>My goal was to replicate the look and feel of Amazon’s homepage to improve my skills in layout design, responsiveness, and styling.
+        <h4><a href="https://github.com/Muhamedkaif/Amazon-clone-webpage.git">GitHub Repo</a> </h4>
+        <h5>Technologies Used</h5><br>
+         HTML: For structuring the entire page, including the header, navigation bar, product sections, and footer CSS: For styling the layout, colors, hover effects, fonts, buttons, and making the page visually similar to the actual Amazon site.
+    </div>
+
+
+    <img class="img2" src="./assets/Tic Tac Toe ss.png">
+
+    <div class="project2">        
+        <h4>Tic Tac Toe</h4>
+        <p>I created this project to strengthen my understanding of JavaScript logic, event handling, and how to dynamically update the UI based on user interactions.<br>
+        <h4><a href="https://github.com/Muhamedkaif/Tic-Tac-Toe-.git">GitHub Repo</a> </h4>
+        <h5>Technologies Used:</h5>
+        HTML: For the structure of the 3x3 grid and control buttons
+        CSS: To style the game board, add hover effects, and make it visually appealing
+        JavaScript: For game functionality — checking wins, switching turns, and handling game resets
+    </div>
+
+    <div class="experiences">
+        <h3>Experience</h3>
+        <p>As a passionate and growing web developer, I’ve had the opportunity to intern at CodSoft , where I worked on real-world tasks and improved my technical, creative, and professional skills.
+        <h3>CodSoft – Web Development Intern</h3>July 2025 – Present
+        During my time at CodSoft, I worked on front-end projects that helped me strengthen my skills in HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="contact">
+        <h2>CONTACT ME ON</h2>
+        <p>+91 7550277894 </p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammedkaifaaaa@gmail.com ">mohammedkaifaaaa@gmail.com |</a>
+        <a href="https://www.linkedin.com/in/muhamed-kaif-14179932b/">Linked-in |</a>
+        <a href="https://github.com/Muhamedkaif">GitHub Profile |</a><br><br><br>
+
+    </div>
+   
+
+
+
+
+
+    <script>
+  document.getElementById("home").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/20;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+    
+  document.getElementById("about").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/4;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+    document.getElementById("skill").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/1;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+  document.getElementById("projects").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/0.6;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+  document.getElementById("experience").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/0.4;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+   
+  document.getElementById("contact").addEventListener("click", function () {
+    const middle = document.body.scrollHeight/0.1;
+    window.scrollTo({
+      top: middle,
+      behavior: "smooth"
+    });
+  });
+</script>
+    
+</body>
+</html>
