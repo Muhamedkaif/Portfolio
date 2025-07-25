@@ -1,6 +1,6 @@
 # 🌐 My Portfolio Website
 
-A responsive and modern developer portfolio website to showcase my skills, projects, and contact information. Built with 
+A responsive and modern developer portfolio website to showcase my skills, projects, and contact information. 
 ![preview](./assets/Screenshot 2025-07-25 044540.png)
 ---
 
