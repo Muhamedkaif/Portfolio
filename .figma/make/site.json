@@ -1,7 +1,11 @@
 {
+  "title": "Muhamed Kaif K | Portfolio",
   "description": "Explore Muhamed Kaif K’s developer portfolio, showcasing Java full-stack projects, technical skills, experience, and contact options for recruiters and collaborators.",
+  "icons": {
+    "icon": "./favicon.png"
+  },
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

@@ -133,7 +133,7 @@ const projects = [
     number: "01",
     name: "SocialSnap",
     label: "Social platform",
-    image: "/projects/SocialSnap.png",
+    image: `${import.meta.env.BASE_URL}projects/SocialSnap.png`,
     description:
       "A secure full-stack social experience built around frictionless sharing, discovery, and meaningful connection.",
     stack: ["Java", "Spring Boot", "React", "MySQL", "Spring Security", "Cloudinary"],
@@ -148,7 +148,7 @@ const projects = [
     number: "02",
     name: "Career Platform",
     label: "AI career intelligence",
-    image: "/projects/CareerPlatform.png",
+    image: `${import.meta.env.BASE_URL}projects/CareerPlatform.png`,
     description:
       "A student-first career management platform that turns resume data into clear, actionable growth paths.",
     stack: ["Spring Boot", "React", "MySQL", "FastAPI", "Ollama", "JWT"],
@@ -163,7 +163,7 @@ const projects = [
     number: "03",
     name: "Cattle Insurance",
     label: "Insurtech platform",
-    image: "/projects/cattle-insurance.png",
+    image: `${import.meta.env.BASE_URL}projects/cattle-insurance.png`,
     description:
       "A role-based claim management system connecting farmers, veterinarians, and insurance administrators.",
     stack: ["React", "Spring Boot", "MySQL"],
@@ -178,7 +178,7 @@ const projects = [
     number: "04",
     name: "ProjectFlow",
     label: "Project operations",
-    image: "/projects/project-management.png",
+    image: `${import.meta.env.BASE_URL}projects/project-management.png`,
     description:
       "A polished SaaS workspace for planning projects, managing tasks, and keeping delivery on track.",
     stack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MySQL"],
@@ -192,12 +192,9 @@ const projects = [
 ];
 
 function downloadResume() {
-
   const link = document.createElement("a");
-
-  link.href = "/resume/Muhamed-Kaif-K-Resume.pdf";
+  link.href = `${import.meta.env.BASE_URL}resume/Muhamed-Kaif-K-Resume.pdf`;
   link.download = "Muhamed-Kaif-K-Resume.pdf";
-
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -551,7 +548,7 @@ export default function App() {
               <div className="profile-frame">
                 <div className="profile-grid" />
                 <img
-                  src="/Profile Photo 2.jpg"
+                  src={`${import.meta.env.BASE_URL}Profile Photo 2.jpg`}
                   alt="Muhamed Kaif"
                   className="relative z-1 w-full h-full object-cover"
                 />
