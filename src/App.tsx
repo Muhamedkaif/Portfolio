@@ -134,6 +134,7 @@ const projects = [
     name: "SocialSnap",
     label: "Social platform",
     image: `${import.meta.env.BASE_URL}projects/SocialSnap.png`,
+    github: "https://github.com/Muhamedkaif/SocialMedia",
     description:
       "A secure full-stack social experience built around frictionless sharing, discovery, and meaningful connection.",
     stack: ["Java", "Spring Boot", "React", "MySQL", "Spring Security", "Cloudinary"],
@@ -149,6 +150,7 @@ const projects = [
     name: "Career Platform",
     label: "AI career intelligence",
     image: `${import.meta.env.BASE_URL}projects/CareerPlatform.png`,
+    github: "https://github.com/Muhamedkaif/career-platform",
     description:
       "A student-first career management platform that turns resume data into clear, actionable growth paths.",
     stack: ["Spring Boot", "React", "MySQL", "FastAPI", "Ollama", "JWT"],
@@ -164,6 +166,7 @@ const projects = [
     name: "Cattle Insurance",
     label: "Insurtech platform",
     image: `${import.meta.env.BASE_URL}projects/cattle-insurance.png`,
+    github: "https://github.com/Muhamedkaif/cattle-insurance-project",
     description:
       "A role-based claim management system connecting farmers, veterinarians, and insurance administrators.",
     stack: ["React", "Spring Boot", "MySQL"],
@@ -179,6 +182,7 @@ const projects = [
     name: "ProjectFlow",
     label: "Project operations",
     image: `${import.meta.env.BASE_URL}projects/project-management.png`,
+    github: "https://github.com/Muhamedkaif/ProjectManagement-project",
     description:
       "A polished SaaS workspace for planning projects, managing tasks, and keeping delivery on track.",
     stack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MySQL"],
@@ -246,7 +250,7 @@ function Header() {
 function SocialLinks({ labels = false }: { labels?: boolean }) {
   return (
     <div className={`social-links ${labels ? "with-labels" : ""}`}>
-      <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+      <a href="https://github.com/Muhamedkaif" target="_blank" rel="noreferrer" aria-label="GitHub">
         <Icon name="github" />
         {labels && <span>GitHub</span>}
       </a>
@@ -435,7 +439,7 @@ function ProjectShowcase({
         <div className="project-actions">
           <a
             className="button button-sm"
-            href="https://github.com/"
+            href={project.github}
             target="_blank"
             rel="noreferrer"
           >
@@ -731,7 +735,7 @@ export default function App() {
                 </em>
               </div>
             </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/Muhamedkaif" target="_blank" rel="noreferrer">
               <span className="solve-icon">
                 <Icon name="github" size={24} />
               </span>
