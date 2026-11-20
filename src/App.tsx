@@ -548,7 +548,7 @@ export default function App() {
               <div className="profile-frame">
                 <div className="profile-grid" />
                 <img
-                  src={`${import.meta.env.BASE_URL}Profile Photo 2.jpg`}
+                  src={`${import.meta.env.BASE_URL}profile-photo.jpg`}
                   alt="Muhamed Kaif"
                   className="relative z-1 w-full h-full object-cover"
                 />
